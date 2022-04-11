@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="primary-div">
+        <div class="left-section">
+            <div class="odin-logo">
+                <div class="logo-content"><img src="./Images/odin-lined.png" alt="Odin Logo - An white simple lined logo representing Odin. A big beard and a typical norse helmet."></div>
+                <span class="logo-text">ODIN</span>
+           </div>
+           <div class="credits">
+                <p>Photo by <a href="https://unsplash.com/@haliewestphoto" class="credit" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA" class="credit" target="_blank">Unsplash</a></p>
+            </div>
+        </div>
+        
+        <div class="form-div">
+            <section class="quote-section">
+                <div class="quote-div">
+                    <blockquote>
+                        <p><span class="line-break">This is not a real online service! You know you need something</span> <span class="line-break">like this in you life to help you realize your deepest dreams.</span>
+                            Sign up <span class="italics">now</span> to get started.
+                        </p>
+                        <p>You <span class="italics">know</span> you want to.</p> 
+                    </blockquote>
+                </div>
+            </section>
+            
+            <section class="form-section">
+                <form action="/" method="get" class="form-inputs" id="form">
+                    <div class="left-form">
+                        <h3>Let's do this!</h3>
+                        <label for="first-name">
+                            <p>FIRST NAME</p><input required type="text" name="first-name" id="first-name" tabindex="1">
+                        </label>
+                        <label for="email">
+                            <p>EMAIL</p><input required type="email" name="email" id="email" tabindex="3">
+                        </label>
+                        <p class="email-msg">*Insert a valid email</p>
+                        <label for="psw">
+                            <p>PASSWORD</p><input required type="password" name="password" id="psw" class="password" tabindex="5">
+                        </label>
+                        <p class="psw-msg">*Passwords do not match</p>
+                    </div>
+                    
+                    <div class="right-form">
+                        <label for="last-name">
+                            <p>LAST NAME</p><input required type="text" name="last-name" id="last-name" tabindex="2">
+                        </label>
+                        <label for="phone" >
+                            <p>PHONE NUMBER</p><input required type="tel" name="phone" id="phone" tabindex="4">
+                        </label>
+                        <label for="confirm-psw">
+                            <p>CONFIRM PASSWORD</p><input required type="password" name="confirm-psw" id="confirm-psw" class="confirm-password" tabindex="6">
+                        </label>
+                    </div>
+                </form>
+            </section>
+
+            <section class="btn-section">
+                <label for="create-acc" class="log-in">
+                    <button type="submit" form="form" tabindex="7">Create Account</button>
+                    <p>Already have an account? <a href="" class="btn-log-in" tabindex="8">Log in</a></p> 
+                </label>   
+            </section>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
